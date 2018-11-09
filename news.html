@@ -3,7 +3,8 @@
 <head>
 	<title>Ockypocky.com</title>
 	 <meta charset="utf-8">
-
+<link rel="stylesheet" href="dist/aos.css">
+<script src="dist/aos.js"></script>
 
 
    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
@@ -20,6 +21,30 @@
 
 <style>
 
+html {
+  scroll-behavior: smooth;
+}
+
+.icon {
+  position: fixed;
+  top: 35%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.icon a {
+  display: block;
+  text-align: center;
+ padding-top: 5px;
+ width: 30%;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+
+
 .back{
    background-image: url("static/back.png");
 }
@@ -27,7 +52,7 @@
   .product_view .modal-dialog{max-width: 800px; width: 100%;}
         .pre-cost{text-decoration: line-through; color: #a5a5a5;}
         .space-ten{padding: 10px 0;}
-.social{font-size:40px; color: white;
+.social{font-size:30px; color: white;
   margin-top: 18px;
   padding-left: 6px;
 padding-right: 6px;}
@@ -58,7 +83,7 @@ padding-right: 6px;}
 
 <!-- Navbar -->
 
-<nav class="navbar-inverse">
+<nav class="navbar-fixed-top navbar-inverse" style="background-color: #F5A600; color: white;">
   <div class="container-fluid">
     <div class="navbar-header" style="margin-bottom: 15px;">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" >
@@ -66,17 +91,17 @@ padding-right: 6px;}
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand " href="#"><img src="static/logo.png" style="height: 50px; margin-top: 0px;"></a>
+      <a class="navbar-brand" href="#"><img src="static/logo.png" style="height: 50px; margin-top: 0px;"></a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right all_test" style="margin-top: 7px; margin-bottom: 10px; color: white;">
       
         <li><a href="index.html">HOME</a></li>
         
-        <li><a href="#testimonial">TESTIMONIAL</a></li>
+        <li><a href="index.html">TESTIMONIAL</a></li>
         <li><a href="https://blog.ockypocky.com/">BLOG</a></li>
-        <li><a href="#contactus">CONTACT US</a></li>
-        <li><a href="news.html">NEWS</a></li>
+        <li><a href="contactus.html">CONTACT US</a></li>
+        <li><a href="#">NEWS</a></li>
       </ul>
       
     </div>
@@ -91,7 +116,7 @@ padding-right: 6px;}
 
 <div class="container-fluid" style="background: #252F41;">
   <div class="row">
-    <div class="col-xs-12" style="margin-top: 35px; margin-bottom: 35px; font-size: 100px; color: white; ">
+    <div class="col-xs-12" style="margin-top: 75px; margin-bottom: 35px; font-size: 100px; color: white; ">
       <center>Media</center>
     </div>
   </div>
@@ -186,73 +211,75 @@ padding-right: 6px;}
 
 
 
-<div class="container-fluid" id = "contactus" style="background: black; margin-top: 50px; color: white;">
-	<div class="row">
-		<div class="col-md-4 col-xs-12" style="margin-top: 30px;">
-<center>			<b style="font-size: 25px; margin-left: 15px;">OckyPocky.com</b></center>
-			<br>
-			<div class="col-md-4" style="margin-top: 20px;">
-			<center>
-				<b>About us</b>
-				Privacy policy<br>
-					
-						Refund Policy<br>
-						</center>
-					
-			</div>
-			<div class="col-md-4" style="margin-top: 20px;">
-			<center>
-				<b>About us</b>
-				Privacy policy<br>
-					
-						Refund Policy<br>
-						</center>
-						
-			</div>
-			<div class="col-md-4" style="margin-top: 20px;">
-			<center>
-				<b>Services</b>
-				Privacy policy<br>
-					
-						Refund Policy<br>
-						
-			</div>
-			</center>	
-			
-		</div>
-		<div class="col-md-4 col-xs-12" style="margin-top: 40px; ">
-		<center >
-			<p><b>My planet’s address:</b></p>
-			<p><b>P-4/7 basement, P4 Lane, DLF Phase 2,</b></p>
-			<p><b>Gurugram, Haryana 122002, India</b></p>
-			<p><b>+91 124 401 0971</b></p>
-			<p><b>Send your love and queries to:</b></p>
-			<p><b>hello@ockypocky.com</b></p>
-      <p><p><center class = "hover"><a href="https://www.facebook.com/amber.gautam.5"  data-toogle= "tooltip" data-placement = "bottom" title="Facebook" class="social_icons social"><i class="fa fa-facebook" ></i></a>
+<div class="container-fluid" id = "contactus" style="background: #F5A600; margin-top: 50px; color: white;">
+  <div class="row">
+    <div class="col-md-6 col-xs-12" style="margin-top: 40px;">
+    <b style="font-size: 20px;" >Quick Links</b><br>
+    <b>Vision</b><br>
+      <b>Mission</b><br>
+      <b>Privacy Policy</b><br>
+      <b>Refund Policy</b><br>
+      <b>Nursary</b><br>
+      <b>Helpline</b><br>
+    </div>
+
+    <div class="col-md-6 col-xs-12" style="margin-top: 40px; ">
+    <b style="font-size: 20px;">Find Us</b><br>
+      <b>My planet’s address:</b><br>
+      <b>P-4/7 basement, P4 Lane, DLF Phase 2,</b><br>
+      <b>Gurugram, Haryana 122002, India</b><br>
+      <b>+91 124 401 0971</b><br>
+      <b>Send your love and queries to:</b><br>
+      <b>hello@ockypocky.com</b><br>
+      <!-- <p><center class = "hover"><a href="https://www.facebook.com/amber.gautam.5"  data-toogle= "tooltip" data-placement = "bottom" title="Facebook" class="social_icons social"><i class="fa fa-facebook" ></i></a>
         <a href="https://twitter.com/gautam_amber" data-toogle= "tooltip" data-placement = "bottom" title="Twitter" class="social_icons social social"><i class="fa fa-twitter" ></i></a>
 
 
 <a href="#" data-toogle= "tooltip" data-placement = "bottom" title="Instagram" class="social_icons social"><i class="fa fa-instagram"></i></a>
 
-      </center></p>
-			</center>
-		</div>
-		<div class="col-md-4 col-xs-12" style="margin-top: 40px;">
-			<center>
-					<img src="static/appleplay.png" style="height: 50px; width: 130px;"><br><br>
-					<img src="static/googleplay.png" style="height: 50px; width: 130px;"><br><br>
-					<p>www.ockypocky.org</p>
-				</center>
-		</div>
-	</div>
+      </center></p> -->
+    </div>
+    
+  </div>
+
+  <hr>
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <center class = "hover"><a href="https://www.facebook.com/amber.gautam.5" style="margin-right: 20px; margin-left: 20px;"  data-toogle= "tooltip" data-placement = "bottom" title="Facebook" class="social_icons social"><i class="fa fa-facebook" ></i></a>
+        <a href="https://twitter.com/gautam_amber" data-toogle= "tooltip" data-placement = "bottom" style="margin-right: 20px; margin-left: 20px;" title="Twitter" class="social_icons social social"><i class="fa fa-twitter" ></i></a>
+        <a href="https://twitter.com/gautam_amber" data-toogle= "tooltip" data-placement = "bottom"  style="margin-right: 20px; margin-left: 20px;" title="Twitter" class="social_icons social social"><i class="fa fa-linkedin" ></i></a>
+        <a href="#" data-toogle= "tooltip" data-placement = "bottom" style="margin-right: 20px; margin-left: 20px;" title="Instagram"  class="social_icons social"><i class="fa fa-instagram"></i></a>
+        <a href="#" data-toogle= "tooltip" data-placement = "bottom" style="margin-right: 20px; margin-left: 20px;" title="Instagram"  class="social_icons social"><i class="fa fa-snapchat"></i></a>
+        <a href="#" data-toogle= "tooltip" data-placement = "bottom" style="margin-right: 20px; margin-left: 20px;" title="Instagram"  class="social_icons social"><i class="fa fa-youtube"></i></a>
+
+      </center>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <center>Copyright @2017 | ockypocky.com</center>
+      </div>
+    </div>
+  </div>
 </div>
 
-<div class="footer">
+<!-- <div class="footer">
   <img src="static/googleplay.png" style="height: 60px"><img src="static/appleplay.png" style="height: 60px"	>
 </div>
+ -->
 
+<div class="icon">
+<a href="#"><img src="static/call_us.png" style="width: 100%; height: 50px;"></a>
 
+  <a href="#"><img src="static/googleplay.png" style="width: 100%; height: 50px;"></a>
+  <a href="#"><img src="static/appleplay.png" style="width: 100%; height: 50px;"></a>
 
+  
+</div>
 
 </body>
 

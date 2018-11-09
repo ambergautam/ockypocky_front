@@ -18,8 +18,36 @@
 
 
 
+.icon {
+  position: fixed;
+  top: 35%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
 
-.social{font-size:40px; color: white;
+.icon a {
+  display: block;
+  text-align: center;
+ padding-top: 5px;
+ width: 30%;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+.col-md-push-6 {
+left: 50%;
+}
+ 
+.col-md-pull-6 {
+right: 50%;
+}
+
+
+
+
+.social{font-size:30px; color: white;
 	margin-top: 18px;
 	padding-left: 6px;
 padding-right: 6px;}
@@ -37,16 +65,45 @@ padding-right: 6px;}
    color: white;
    text-align: center;
 }
+
+
+
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+/*Media query*/
+
+
+@media only screen and (max-width: 1000px) {
+    .col-md-push-6 {
+left: 0%;
+}
+ 
+.col-md-pull-6 {
+right: 0%;
+
+}
+.slider{
+  width: 100%;
+  height: 200px;
+}
+}
+
+
 </style>
 
 <body>
 
 <!-- Navbar -->
 
-<nav class="navbar-inverse">
+<nav class="navbar-inverse navbar-fixed-top" style="background-color: #F5A600; color: white;">
   <div class="container-fluid">
     <div class="navbar-header" style="margin-bottom: 15px;">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" >
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="color: white;">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
@@ -54,7 +111,7 @@ padding-right: 6px;}
       <a class="navbar-brand" href="#"><img src="static/logo.png" style="height: 50px; margin-top: 0px;"></a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right all_test" style="margin-top: 7px; margin-bottom: 10px; color: white;">
+      <ul class="nav navbar-nav navbar-right all_test" style="margin-top: 7px; margin-bottom: 10px;">
       
         <li><a href="#">HOME</a></li>
         
@@ -69,9 +126,14 @@ padding-right: 6px;}
 </nav>
 
 
+
+
+
+
+
 <!-- Slider -->
 
- <div id="myCarousel" class="carousel slide" data-ride="carousel">
+ <div id="myCarousel" style="margin-top: 50px;"  class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -82,29 +144,22 @@ padding-right: 6px;}
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
       <div class="item active">
-        <img src="static/screen01.png" alt="Los Angeles" style="width:100%; height: 550px;">
+        <img src="static/screen01.png" alt="Los Angeles" style="width:100%; height: 550px;" class="slider">
       </div>
 
       <div class="item">
-        <img src="static/screen02.png" alt="Chicago" style="width:100%; height: 550px;">
+        <img src="static/screen02.png" alt="Chicago" style="width:100%; height: 550px;" class="slider">
       </div>
     
       <div class="item">
-        <img src="static/screen03.png" alt="New york" style="width:100%; height: 550px;">
+        <img src="static/screen03.png" alt="New york" style="width:100%; height: 550px;" class="slider">
       </div>
     </div>
 
     <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right"></span>
-      <span class="sr-only">Next</span>
-    </a>
+    
   </div>
-</div>
+
 
 
 
@@ -112,7 +167,7 @@ padding-right: 6px;}
 <div class="container">
 	<div class="row" style="margin-top: 50px;">
         <div class="col-lg-12">
-            <div class="col-md-6 w3-container w3-center w3-animate-left" >
+            <div class="col-md-6">
                 <img class="img-responsive img-rounded" src="static/antriksh.png" alt="">
             </div>
             <!-- /.col-md-8 -->
@@ -125,40 +180,50 @@ padding-right: 6px;}
 
         </div>
     </div>
-
-    </br>
-
-    <div class="row" style="margin-top: 50px;">
-        <div class="col-lg-12">
-
-
-            <div class="col-md-6" style="margin-top: 35px;">
-               <p><h2 class="all_test">Know what’s sparking your child’s interests.</h2></p>
-			<p><b><h4 class="w3-justify all_test">If you ever wonder what’s on your child's mind, just ask me! I’ll help you discover what they love by exploring Antariksh! By tapping on the Ignited, Curious and Star-struck buttons on my galactic map, I will show you what kind of videos are exciting their interest! You can further compare your child’s mind map over time and see how they are evolving. Sounds fun, right?</h4></b></p>
-            </div>
-
-            <div class="col-md-6 w3-container w3-center w3-animate-right">
-                <img class="img-responsive img-rounded" src="static/antriksh.png" alt="">
-            </div>
-            <!-- /.col-md-8 -->
-
-
-        </div>
     </div>
 
     </br>
 
+    <div class="container">
+  
     <div class="row" style="margin-top: 50px;">
         <div class="col-lg-12">
 
-             <div class="col-md-6 w3-container w3-center w3-animate-left">
-                <img class="img-responsive img-rounded" src="static/antriksh.png" alt="">
+             <div class="col-md-6 col-md-push-6">
+                <img class="img-responsive img-rounded" src="static/timer.png" alt="">
+            </div>
+
+            <!-- /.col-md-8 -->
+            <div class="col-md-6 col-md-pull-6" style="margin-top: 35px;">
+                <p><h2 class="all_test">Set screen time!</h2></p>
+      <p><b><h4 class="w3-justify all_test">I know your kid will love me a little too much! That's why I have a cool timer that lets you fix your child's surfing time. You can set an hourly limit or fix a time of the day - immediately logging out when it's past their viewing time. This way, you can let your kids know when it’s time to stop watching so you don’t have to negotiate!</h4></b></p>
+            </div>
+
+
+
+            <!-- /.col-md-4 -->
+
+
+        </div>
+    </div>
+</div>
+
+
+    </br>
+
+<div class="container">
+  
+    <div class="row" style="margin-top: 50px;">
+        <div class="col-lg-12">
+
+             <div class="col-md-6">
+                <img class="img-responsive img-rounded" src="static/download.png" alt="">
             </div>
 
             <!-- /.col-md-8 -->
             <div class="col-md-6" style="margin-top: 35px;">
-                <p><h2 class="all_test">Know what’s sparking your child’s interests.</h2></p>
-			<p><b><h4 class="w3-justify all_test">If you ever wonder what’s on your child's mind, just ask me! I’ll help you discover what they love by exploring Antariksh! By tapping on the Ignited, Curious and Star-struck buttons on my galactic map, I will show you what kind of videos are exciting their interest! You can further compare your child’s mind map over time and see how they are evolving. Sounds fun, right?</h4></b></p>
+                <p><h2 class="all_test">Let’s play offline!</h2></p>
+			<p><b><h4 class="w3-justify all_test">Save your phone’s data while your kid watches videos on my train! With my Offline feature, download your child’s loved videos so that you don't have to use your phone's data again! That’s right, even without any internet connectivity, my train of videos will keep running forever because there shouldn’t be any pause in your kid’s fun time!</h4></b></p>
             </div>
 
 
@@ -189,68 +254,74 @@ padding-right: 6px;}
   </div>
 
 
-<div class="container-fluid" id = "contactus" style="background: black; margin-top: 50px; color: white;">
+<div class="container-fluid" id = "contactus" style="background: #F5A600; margin-top: 50px; color: white;">
 	<div class="row">
-		<div class="col-md-4 col-xs-12" style="margin-top: 30px;">
-<center>			<b style="font-size: 25px; margin-left: 15px;">OckyPocky.com</b></center>
-			<br>
-			<div class="col-md-4" style="margin-top: 20px;">
-			<center>
-				<b>About us</b>
-				Privacy policy<br>
-					
-						Refund Policy<br>
-						</center>
-					
-			</div>
-			<div class="col-md-4" style="margin-top: 20px;">
-			<center>
-				<b>About us</b>
-				Privacy policy<br>
-					
-						Refund Policy<br>
-						</center>
-						
-			</div>
-			<div class="col-md-4" style="margin-top: 20px;">
-			<center>
-				<b>Services</b>
-				Privacy policy<br>
-					
-						Refund Policy<br>
-						
-			</div>
-			</center>	
-			
-		</div>
-		<div class="col-md-4 col-xs-12" style="margin-top: 40px; ">
-		<center >
-			<p><b>My planet’s address:</b></p>
-			<p><b>P-4/7 basement, P4 Lane, DLF Phase 2,</b></p>
-			<p><b>Gurugram, Haryana 122002, India</b></p>
-			<p><b>+91 124 401 0971</b></p>
-			<p><b>Send your love and queries to:</b></p>
-			<p><b>hello@ockypocky.com</b></p>
-			<p><center class = "hover"><a href="https://www.facebook.com/amber.gautam.5"  data-toogle= "tooltip" data-placement = "bottom" title="Facebook" class="social_icons social"><i class="fa fa-facebook" ></i></a>
+		<div class="col-md-6 col-xs-12" style="margin-top: 40px;">
+    <b style="font-size: 20px;" >Quick Links</b><br>
+    <b>Vision</b><br>
+      <b>Mission</b><br>
+      <b>Privacy Policy</b><br>
+      <b>Refund Policy</b><br>
+      <b>Nursary</b><br>
+      <b>Helpline</b><br>
+    </div>
+
+		<div class="col-md-6 col-xs-12" style="margin-top: 40px; ">
+		<b style="font-size: 20px;">Find Us</b><br>
+			<b>My planet’s address:</b><br>
+      <b>P-4/7 basement, P4 Lane, DLF Phase 2,</b><br>
+      <b>Gurugram, Haryana 122002, India</b><br>
+      <b>+91 124 401 0971</b><br>
+      <b>Send your love and queries to:</b><br>
+      <b>hello@ockypocky.com</b><br>
+			<!-- <p><center class = "hover"><a href="https://www.facebook.com/amber.gautam.5"  data-toogle= "tooltip" data-placement = "bottom" title="Facebook" class="social_icons social"><i class="fa fa-facebook" ></i></a>
 				<a href="https://twitter.com/gautam_amber" data-toogle= "tooltip" data-placement = "bottom" title="Twitter" class="social_icons social social"><i class="fa fa-twitter" ></i></a>
 
 
 <a href="#" data-toogle= "tooltip" data-placement = "bottom" title="Instagram" class="social_icons social"><i class="fa fa-instagram"></i></a>
 
-			</center></p>
+			</center></p> -->
 		</div>
-		<div class="col-md-4 col-xs-12" style="margin-top: 40px;">
-			<center>
-					<img src="static/appleplay.png" style="height: 50px; width: 130px;"><br><br>
-					<img src="static/googleplay.png" style="height: 50px; width: 130px;"><br><br>
-					<p>www.ockypocky.org</p>
-				</center>
-		</div>
+		
 	</div>
+
+  <hr>
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <center class = "hover"><a href="https://www.facebook.com/amber.gautam.5" style="margin-right: 20px; margin-left: 20px;"  data-toogle= "tooltip" data-placement = "bottom" title="Facebook" class="social_icons social"><i class="fa fa-facebook" ></i></a>
+        <a href="https://twitter.com/gautam_amber" data-toogle= "tooltip" data-placement = "bottom" style="margin-right: 20px; margin-left: 20px;" title="Twitter" class="social_icons social social"><i class="fa fa-twitter" ></i></a>
+        <a href="https://twitter.com/gautam_amber" data-toogle= "tooltip" data-placement = "bottom"  style="margin-right: 20px; margin-left: 20px;" title="Twitter" class="social_icons social social"><i class="fa fa-linkedin" ></i></a>
+        <a href="#" data-toogle= "tooltip" data-placement = "bottom" style="margin-right: 20px; margin-left: 20px;" title="Instagram"  class="social_icons social"><i class="fa fa-instagram"></i></a>
+        <a href="#" data-toogle= "tooltip" data-placement = "bottom" style="margin-right: 20px; margin-left: 20px;" title="Instagram"  class="social_icons social"><i class="fa fa-snapchat"></i></a>
+        <a href="#" data-toogle= "tooltip" data-placement = "bottom" style="margin-right: 20px; margin-left: 20px;" title="Instagram"  class="social_icons social"><i class="fa fa-youtube"></i></a>
+
+      </center>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <center>Copyright @2017 | ockypocky.com</center>
+      </div>
+    </div>
+  </div>
 </div>
 
-<div class="footer">
+
+<!-- <div class="footer">
   <img src="static/googleplay.png" style="height: 60px"><img src="static/appleplay.png" style="height: 60px"	>
+</div> -->
+
+<div class="icon">
+<a href="#"><img src="static/call_us.png" style="width: 100%; height: 50px;"></a>
+
+  <a href="#"><img src="static/googleplay.png" style="width: 100%; height: 50px;"></a>
+  <a href="#"><img src="static/appleplay.png" style="width: 100%; height: 50px;"></a>
+
+  
 </div>
 
 
