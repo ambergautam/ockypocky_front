@@ -5,7 +5,9 @@
 	 <meta charset="utf-8">
 <link rel="stylesheet" href="dist/aos.css">
 <script src="dist/aos.js"></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
@@ -68,8 +70,10 @@ padding-right: 6px;}
   width: 100%;
 }
 
-img:hover{ position: relative; 
-             top: -4px;}
+a :hover{ position: relative; 
+  color: white;
+             top: -3px;}
+
 
 .footer {
    position: fixed;
@@ -146,21 +150,23 @@ img:hover{ position: relative;
                 <div class="caption" style="background: white;">
                   
                  <p style=" font-size: 20px;"><b><br>Latest News</b></p>
-                  <p style="font-size: 17px;">Basic information on who we are and what we do.......</p>
+                  <p style="font-size: 17px;">Basic information on who we are and what we do</p>
                   <center><a style="color: blue;" href="">View more</a><br><br></center>
                 </div>
              
               
             </div>
-            <div class="col-md-4 w3-container w3-center w3-animate-right">
+            <div class="col-md-4 w3-container w3-center w3-animate-top">
               
-                <img src="static/mission.jpg" alt="" class="img-responsive">
+                <img src="static/mission.jpg" alt="" class="img-responsive"s >
                 <div class="caption" style="background: white;">
-                   <p style=" font-size: 20px;"><b><br>Basic information on who we are and what we do.</b></p>
-              
+                  
+                 <p style=" font-size: 20px;"><b><br>Latest News</b></p>
+                  <p style="font-size: 17px;">Basic information on who we are and what we do</p>
                   <center><a style="color: blue;" href="">View more</a><br><br></center>
                 </div>
              
+              
             </div>
     </div>
 </div>
@@ -311,6 +317,7 @@ function callme(field) {
     window.prompt("Copy to clipboard: Ctrl+C", field);
 }
 
+ AOS.init();
 </script>
 
 </html>

@@ -3,7 +3,8 @@
 <head>
 	<title>Ockypocky.com</title>
 	 <meta charset="utf-8">
-
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	 <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Amaranth"/>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -156,7 +157,10 @@ padding-right: 6px;}
 }
 
 
-
+.hover_color:hover{
+  border-radius: 50px;
+  background-color: blue;
+}
 
 
 html {
@@ -181,6 +185,36 @@ right: 0%;
   height: 200px;
 }
 }
+
+
+#back2Top {
+    width: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    z-index: 999;
+    display: none;
+    cursor: pointer;
+    -moz-transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+    position: fixed;
+    bottom: 50px;
+    right: 0;
+    margin-right: 20px; 
+    background-color: #DDD;
+    color: #555;
+    text-align: center;
+    font-size: 30px;
+    text-decoration: none;
+}
+#back2Top:hover {
+    background-color: #DDF;
+    color: #000;
+}
+
+
 
 .back{
    background-image: url("static/back.png");
@@ -260,7 +294,7 @@ right: 0%;
 	<div class="row" style="margin-top: 6px;">
         <div class="col-lg-12">
             <div class="col-md-6">
-                <img class="img-responsive img-rounded" src="static/antriksh.png" alt="">
+                <img class="img-responsive img-rounded" src="static/antriksh.png" alt="" data-aos="fade-right">
             </div>
             <!-- /.col-md-8 -->
             <div class="col-md-6" style="margin-top: 35px;">
@@ -309,7 +343,7 @@ right: 0%;
         <div class="col-lg-12">
 
              <div class="col-md-6">
-                <img class="img-responsive img-rounded" src="static/download.png" alt="">
+                <img class="img-responsive img-rounded" src="static/download.png" alt="" data-aos="fade-right">
             </div>
 
             <!-- /.col-md-8 -->
@@ -350,13 +384,13 @@ right: 0%;
 	<div class="row">
 		<div class="col-md-6 col-xs-12" style="margin-top: 20px;">
     <center><b style="font-size: 20px;" >Quick Links</b><br>
-    <b>Home</b><br>
-      <b>Contact Us</b><br>
-      <b>Blog</b><br>
-      <b>News</b><br>
+    <b><a href="#">Home</a></b><br>
+      <b><a href="contactus.html">Contact us</a></b><br>
+      <b><a href="https://blog.ockypocky.com">Blog</a></b><br>
+      <b><a href="news.html">News</a></b><br>
 
-      <b>Vision</b><br>
-      <b>Mission</b><br>
+      <b><a href="#">Vision</a></b><br>
+      <b><a href="#">Mission</a></b><br>
     </div></center>
 
 		<div class="col-md-6 col-xs-12" style="margin-top: 20px; ">
@@ -368,13 +402,9 @@ right: 0%;
       <b>Send your love and queries to:</b><br>
       <b>hello@ockypocky.com</b><br></center>
 
-			<!-- <p><center class = "hover"><a href="https://www.facebook.com/amber.gautam.5"  data-toogle= "tooltip" data-placement = "bottom" title="Facebook" class="social_icons social"><i class="fa fa-facebook" ></i></a>
-				<a href="https://twitter.com/gautam_amber" data-toogle= "tooltip" data-placement = "bottom" title="Twitter" class="social_icons social social"><i class="fa fa-twitter" ></i></a>
+			
 
-
-<a href="#" data-toogle= "tooltip" data-placement = "bottom" title="Instagram" class="social_icons social"><i class="fa fa-instagram"></i></a>
-
-			</center></p> -->
+			</center>
 		</div>
 		
 	</div>
@@ -384,10 +414,10 @@ right: 0%;
   <div class="container">
     <div class="row">
       <div class="col-xs-12">
-        <center class = "hover"><a href="https://www.facebook.com/amber.gautam.5" style="margin-right: 20px; margin-left: 20px;"  data-toogle= "tooltip" data-placement = "bottom" title="Facebook" class="social_icons social"><i class="fa fa-facebook" ></i></a>
+        <center class = "hover"><a href="https://www.facebook.com/amber.gautam.5" style="margin-right: 20px; margin-left: 20px;"  data-toogle= "tooltip" data-placement = "bottom" title="Facebook" class="social hover_color"><i class="fa fa-facebook" ></i></a>
         
-        <a href="https://twitter.com/gautam_amber" data-toogle= "tooltip" data-placement = "bottom"  style="margin-right: 20px; margin-left: 20px;" title="Twitter" class="social_icons social social"><i class="fa fa-linkedin" ></i></a>
-        <a href="#" data-toogle= "tooltip" data-placement = "bottom" style="margin-right: 20px; margin-left: 20px;" title="Instagram"  class="social_icons social"><i class="fa fa-instagram"></i></a>
+        <a href="https://twitter.com/gautam_amber"   data-toogle= "tooltip" data-placement = "bottom"  style="margin-right: 20px; margin-left: 20px;" title="Linkedin" class="social hover_color"><i class="fa fa-linkedin" ></i></a>
+        <a href="#" data-toogle= "tooltip" data-placement = "bottom" style="margin-right: 20px; margin-left: 20px;" title="Instagram"  class="social hover_color"><i class="fa fa-instagram"></i></a>
         
         
 <hr style="margin-right: 400px; margin-left: 400px;">
@@ -406,6 +436,9 @@ right: 0%;
 </div>
 
 
+
+
+
 <!-- <div class="footer">
   <img src="static/googleplay.png" style="height: 60px"><img src="static/appleplay.png" style="height: 60px"	>
 </div> -->
@@ -421,6 +454,9 @@ right: 0%;
 </div>
 
 
+
+
+<a id="back2Top" title="Back to top" href="#">&#10148;</a>
 
 
 </body>
@@ -446,7 +482,29 @@ function callme(field) {
     window.prompt("Copy to clipboard: Ctrl+C", field);
 }
 
+$(window).scroll(function() {
+    var height = $(window).scrollTop();
+    if (height > 100) {
+        $('#back2Top').fadeIn();
+    } else {
+        $('#back2Top').fadeOut();
+    }
+});
+$(document).ready(function() {
+    $("#back2Top").click(function(event) {
+        event.preventDefault();
+        $("html, body").animate({ scrollTop: 0 }, "slow");
+        return false;
+    });
+
+});
+
+
+  AOS.init();
+
 </script>
+
+
 
 
 
