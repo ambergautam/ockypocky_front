@@ -48,16 +48,90 @@
     bottom: 50px;
     right: 0;
     margin-right: 20px; 
-    background-color: #DDD;
-    color: #555;
+    background-color: #005A0B;
+    color: white;
     text-align: center;
     font-size: 30px;
     text-decoration: none;
 }
-#back2Top:hover {
-    background-color: #DDF;
-    color: #000;
+
+
+
+.footer-social-icons {
+    width: 350px;
+    display:block;
+    margin: 0 auto;
 }
+.social-icon {
+    color: #fff;
+}
+ul.social-icons {
+    margin-top: 10px;
+}
+.social-icons li {
+    vertical-align: top;
+    display: inline;
+    height: 150px;
+}
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+}
+.fa-facebook {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    font-size: 25px;
+    
+}
+.fa-facebook:hover {
+    background-color: #3d5b99;
+}
+.fa-twitter {
+    padding:10px 12px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    font-size: 25px;
+    
+}
+.fa-twitter:hover {
+    background-color: #00aced;
+}
+
+
+.fa-linkedin {
+  font-size: 25px;
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    
+}
+.fa-linkedin:hover {
+    background-color: #0073a4;
+}
+.fa-instagram {
+  font-size: 25px;
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    
+}
+.fa-instagram:hover {
+    background-color: #E75400;
+}
+
 
 
 #contact input[type="text"],
@@ -194,6 +268,9 @@ html {
 }
 
 
+.footer-link:hover{
+  color: white;
+}
 
 ::-webkit-input-placeholder {
   color: #888;
@@ -261,7 +338,7 @@ padding-right: 6px;}
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#"><img src="static/logo.png" style="height: 55px; margin-top: 0px;"></a>
+      <a class="navbar-brand" href="index.html"><img src="static/logo.png" style="height: 55px; margin-top: 0px;"></a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right all_test"  style="font-size: 17px; margin-top: 8px; margin-bottom: 11px; color: white;">
@@ -270,8 +347,9 @@ padding-right: 6px;}
         
        <!--  <li><a href="index.html">TESTIMONIAL</a></li> -->
         <li><a href="https://blog.ockypocky.com/" style="color: black; font-size: 20px;"><b>BLOG</b></a></li>
-        <li><a href="#" style="color: black; font-size: 20px;"><b>CONTACT US</b></a></li>
         <li><a href="news.html" style="color: black; font-size: 20px;"><b>NEWS</b></a></li>
+        <li><a href="#" style="color: white; margin-right: 20px; font-size: 20px;"><b>CONTACT US</b></a></li>
+        
       </ul>
       
     </div>
@@ -355,14 +433,14 @@ padding-right: 6px;}
   <div class="row">
     <div class="col-md-6 col-xs-12" style="margin-top: 20px;">
     <center><b style="font-size: 20px;" >Quick Links</b><br>
-    <b>Home</b><br>
-      <b>Contact Us</b><br>
-      <b>Blog</b><br>
-      <b>Contact Us</b><br>
-     
-      <b>Vision</b><br>
-      <b>Mission</b><br>
-    </div></center>
+    <b><a class = "footer-link" href="home.html">Home</a></b><br>
+      <b><a class = "footer-link" href="contactus.html">Contact us</a></b><br>
+      <b><a class = "footer-link" href="https:blog.ockypocky.com">Blog</a></b><br>
+      <b><a class = "footer-link" href="#">News</a></b><br>
+      
+      <b><a class = "footer-link" href="#mission">Vision/Mission</a></b><br>
+     </center>
+    </div>
 
     <div class="col-md-6 col-xs-12" style="margin-top: 20px; ">
     <center><b style="font-size: 20px;">My planet’s address:</b><br><br>
@@ -389,10 +467,14 @@ padding-right: 6px;}
   <div class="container">
     <div class="row">
       <div class="col-xs-12">
-        <center class = "hover"><a href="https://www.facebook.com/amber.gautam.5" style="margin-right: 20px; margin-left: 20px;"  data-toogle= "tooltip" data-placement = "bottom" title="Facebook" class="social_icons social"><i class="fa fa-facebook" ></i></a>
+        <center><ul class="social-icons">
+        <li><a href="https://twitter.com/iamockypocky" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
+        <li><a href="https://twitter.com/iamockypocky" class="social-icon"> <i class="fa fa-twitter"></i></a></li> 
+        <li><a href="https://www.instagram.com/iamockypocky" class="social-icon"> <i class="fa fa-instagram"></i></a></li>  
+        <li><a href="https://www.linkedin.com/company/whizkidz-media-pvt-ltd/" class="social-icon"> <i class="fa fa-linkedin"></i></a></li> 
         
-        <a href="https://twitter.com/gautam_amber" data-toogle= "tooltip" data-placement = "bottom"  style="margin-right: 20px; margin-left: 20px;" title="Twitter" class="social_icons social social"><i class="fa fa-linkedin" ></i></a>
-        <a href="#" data-toogle= "tooltip" data-placement = "bottom" style="margin-right: 20px; margin-left: 20px;" title="Instagram"  class="social_icons social"><i class="fa fa-instagram"></i></a>
+    </ul></center>
+
         
         
 <hr style="margin-right: 400px; margin-left: 400px;">
@@ -416,6 +498,7 @@ padding-right: 6px;}
 
 <div class="icon">
 <a href="#" onclick="callme('8447570623')"><img src="static/call_us.png" style="width: 100%; height: 50px;"></a>
+<br>
 
   <a href="#"><img src="static/googleplay.png" style="width: 110%; height: 60px;"></a>
   <a href="#"><img src="static/appleplay.png" style="width: 110%; height: 60px;"></a>

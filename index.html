@@ -19,6 +19,88 @@
 
 
 
+
+.footer-social-icons {
+    width: 350px;
+    display:block;
+    margin: 0 auto;
+}
+.social-icon {
+    color: #fff;
+}
+ul.social-icons {
+    margin-top: 10px;
+}
+.social-icons li {
+    vertical-align: top;
+    display: inline;
+    height: 150px;
+}
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+}
+.fa-facebook {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    font-size: 25px;
+    
+}
+.fa-facebook:hover {
+    background-color: #3d5b99;
+}
+.fa-twitter {
+    padding:10px 12px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    font-size: 25px;
+    
+}
+.fa-twitter:hover {
+    background-color: #00aced;
+}
+
+
+.fa-linkedin {
+  font-size: 25px;
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    
+}
+.fa-linkedin:hover {
+    background-color: #0073a4;
+}
+.fa-instagram {
+  font-size: 25px;
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    
+}
+.fa-instagram:hover {
+    background-color: #E75400;
+}
+
+
+
+
+
+
+
 @media only screen and (max-width: 320px){
 
           .slider{
@@ -126,6 +208,10 @@ a :hover{ position: relative;
   font-size: 20px;
 }
 
+.footer_link:hover{
+  color: white;
+}
+
 .col-md-push-6 {
 left: 50%;
 }
@@ -135,12 +221,12 @@ right: 50%;
 }
 
 
+[data-aos-delay] {
+    transition-delay: 3s !important;
+}
 
 
-.social{font-size:30px; color: white;
-	margin-top: 18px;
-	padding-left: 6px;
-padding-right: 6px;}
+
 
 	.all_test{
 			font-family: Amaranth;
@@ -159,7 +245,23 @@ padding-right: 6px;}
 
 .hover_color:hover{
   border-radius: 50px;
+   padding: 10px;
+  
   background-color: blue;
+}
+
+
+
+
+.hover_color_linkedin:hover{
+  border-radius: 50px;
+ padding: 10px;
+  background-color: #0077B5;
+}
+.hover_color_insta:hover{
+  border-radius: 50px;
+   padding: 10px;
+  background-color: #E98356;
 }
 
 
@@ -203,16 +305,14 @@ right: 0%;
     bottom: 50px;
     right: 0;
     margin-right: 20px; 
-    background-color: #DDD;
-    color: #555;
+    background-color: #005A0B;
+    color: white;
     text-align: center;
     font-size: 30px;
+
     text-decoration: none;
 }
-#back2Top:hover {
-    background-color: #DDF;
-    color: #000;
-}
+
 
 
 
@@ -239,12 +339,13 @@ right: 0%;
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right all_test" style="margin-top: 7px; margin-bottom: 10px;">
       
-        <li><a href="#" style="color: black; font-size: 18px;"><b>HOME</b></a></li>
+        <li><a href="#" style="color: black; font-size: 18px; color: white;"><b>HOME</b></a></li>
         
         <li><a href="#testimonial" style="color: black; font-size: 18px;""><b>TESTIMONIAL</b></a></li>
         <li><a href="https://blog.ockypocky.com/" style="color: black; font-size: 18px;""><b>BLOG</b></a></li>
-        <li><a href="contactus.html" style="color: black; font-size: 18px;"><b>CONTACT US</b></a></li>
         <li><a href="news.html" style="color: black; margin-right: 10px; font-size: 18px;"><b>NEWS</b></a></li>
+        <li><a href="contactus.html" style="color: black; margin-right: 20px; font-size: 18px;"><b>CONTACT US</b></a></li>
+        
       </ul>
       
     </div>
@@ -294,11 +395,11 @@ right: 0%;
 	<div class="row" style="margin-top: 6px;">
         <div class="col-lg-12">
             <div class="col-md-6">
-                <img class="img-responsive img-rounded" src="static/antriksh.png" alt="" data-aos="fade-right">
+                <img class="img-responsive img-rounded" src="static/antriksh.png" alt="" >
             </div>
             <!-- /.col-md-8 -->
-            <div class="col-md-6" style="margin-top: 35px;">
-                <p><h2 class="all_test">Know what’s sparking your child’s interests.</h2></p>
+            <div class="col-md-6" style="margin-top: 35px;  " data-aos="fade-left">
+                <p><h2 class="all_test" style="font-family: Amaranth;">Know what’s sparking your child’s interests.</h2></p>
 			<p><b><h4  class="w3-justify all_test">If you ever wonder what’s on your child's mind, just ask me! I’ll help you discover what they love by exploring Antariksh! By tapping on the Ignited, Curious and Star-struck buttons on my galactic map, I will show you what kind of videos are exciting their interest! You can further compare your child’s mind map over time and see how they are evolving. Sounds fun, right?</h4></b></p>
             </div>
             <!-- /.col-md-4 -->
@@ -320,7 +421,7 @@ right: 0%;
             </div>
 
             <!-- /.col-md-8 -->
-            <div class="col-md-6 col-md-pull-6" style="margin-top: 35px;">
+            <div class="col-md-6 col-md-pull-6" style="margin-top: 35px;" data-aos="fade-right">
                 <p><h2 class="all_test">Set screen time!</h2></p>
       <p><b><h4 class="w3-justify all_test">I know your kid will love me a little too much! That's why I have a cool timer that lets you fix your child's surfing time. You can set an hourly limit or fix a time of the day - immediately logging out when it's past their viewing time. This way, you can let your kids know when it’s time to stop watching so you don’t have to negotiate!</h4></b></p>
             </div>
@@ -335,21 +436,23 @@ right: 0%;
 </div>
 
 
+
+
     </br>
 
-<div class="container" style="background-image: url(static/ockybg.png); margin-top: 30px;">
+<div class="container" id = "mission" style="background-image: url(static/ockybg.png); margin-top: 30px;">
   
     <div class="row" style="margin-top: 6px;">
         <div class="col-lg-12">
 
              <div class="col-md-6">
-                <img class="img-responsive img-rounded" src="static/download.png" alt="" data-aos="fade-right">
+                <img class="img-responsive img-rounded" src="static/download.png" alt="">
             </div>
 
             <!-- /.col-md-8 -->
-            <div class="col-md-6" style="margin-top: 35px;">
-                <p><h2 class="all_test">Let’s play offline!</h2></p>
-			<p><b><h4 class="w3-justify all_test">Save your phone’s data while your kid watches videos on my train! With my Offline feature, download your child’s loved videos so that you don't have to use your phone's data again! That’s right, even without any internet connectivity, my train of videos will keep running forever because there shouldn’t be any pause in your kid’s fun time!</h4></b></p>
+            <div class="col-md-6" style="margin-top: 35px;" data-aos="fade-left">
+                <p><h2 class="all_test">Our Vision</h2></p>
+			<p><b><h4 class="w3-justify all_test">Our vision is to make learning fun and personalised. To facilitate brain developmentand skill development by taking advantage of kids' natural desire to learn.</h4></b></p>
             </div>
 
 
@@ -360,6 +463,7 @@ right: 0%;
         </div>
     </div>
 </div>
+ 
 
 
 
@@ -371,11 +475,11 @@ right: 0%;
         </div>
       </div>
       <div>
-      <img class="mySlides w3-animate-fading" src="static/testimonial2.png" style="width:100%">
-      <img class="mySlides w3-animate-fading" src="static/testimonial3.png" style="width:100%">
-      <img class="mySlides w3-animate-fading" src="static/testimonial4.png" style="width:100%">
-      <img class="mySlides w3-animate-fading" src="static/testimonial5.png" style="width:100%">
-      <img class="mySlides w3-animate-fading" src="static/testimonial6.png" style="width:100%">
+      <img class="mySlides w3-animate-zoom" src="static/testimonial2.png" style="width:100%; border: solid; border-color: white;">
+      <img class="mySlides w3-animate-zoom" src="static/testimonial3.png" style="width:100%; border: solid; border-color: white;">
+      <img class="mySlides w3-animate-zoom" src="static/testimonial4.png" style="width:100%; border: solid; border-color: white;border: solid; border-color: white;">
+      <img class="mySlides w3-animate-zoom" src="static/testimonial5.png" style="width:100%; border: solid; border-color: white;">
+      <img class="mySlides w3-animate-zoom" src="static/testimonial6.png" style="width:100%; border: solid; border-color: white;">
       </div>
   </div>
 
@@ -384,14 +488,14 @@ right: 0%;
 	<div class="row">
 		<div class="col-md-6 col-xs-12" style="margin-top: 20px;">
     <center><b style="font-size: 20px;" >Quick Links</b><br>
-    <b><a href="#">Home</a></b><br>
-      <b><a href="contactus.html">Contact us</a></b><br>
-      <b><a href="https://blog.ockypocky.com">Blog</a></b><br>
-      <b><a href="news.html">News</a></b><br>
+    <b><a class="footer_link" href="#">Home</a></b><br>
+      <b><a class="footer_link" href="contactus.html">Contact us</a></b><br>
+      <b><a class="footer_link" href="https://blog.ockypocky.com">Blog</a></b><br>
+      <b><a class="footer_link" href="news.html">News</a></b><br>
 
-      <b><a href="#">Vision</a></b><br>
-      <b><a href="#">Mission</a></b><br>
-    </div></center>
+      <b><a class="footer_link" href="#mission">Vision/Mission</a></b><br>
+     </center>
+    </div>
 
 		<div class="col-md-6 col-xs-12" style="margin-top: 20px; ">
 		<center><b style="font-size: 20px;">My planet’s address:</b><br><br>
@@ -414,15 +518,16 @@ right: 0%;
   <div class="container">
     <div class="row">
       <div class="col-xs-12">
-        <center class = "hover"><a href="https://www.facebook.com/amber.gautam.5" style="margin-right: 20px; margin-left: 20px;"  data-toogle= "tooltip" data-placement = "bottom" title="Facebook" class="social hover_color"><i class="fa fa-facebook" ></i></a>
+        <div class="footer-social-icons">
+    
+    <center><ul class="social-icons">
+        <li><a href="https://twitter.com/iamockypocky" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
+        <li><a href="https://twitter.com/iamockypocky" class="social-icon"> <i class="fa fa-twitter"></i></a></li> 
+        <li><a href="https://www.instagram.com/iamockypocky" class="social-icon"> <i class="fa fa-instagram"></i></a></li>  
+        <li><a href="https://www.linkedin.com/company/whizkidz-media-pvt-ltd/" class="social-icon"> <i class="fa fa-linkedin"></i></a></li> 
         
-        <a href="https://twitter.com/gautam_amber"   data-toogle= "tooltip" data-placement = "bottom"  style="margin-right: 20px; margin-left: 20px;" title="Linkedin" class="social hover_color"><i class="fa fa-linkedin" ></i></a>
-        <a href="#" data-toogle= "tooltip" data-placement = "bottom" style="margin-right: 20px; margin-left: 20px;" title="Instagram"  class="social hover_color"><i class="fa fa-instagram"></i></a>
-        
-        
-<hr style="margin-right: 400px; margin-left: 400px;">
-
-      </center>
+    </ul></center>
+</div>
       </div>
     </div>
   </div>
@@ -445,7 +550,7 @@ right: 0%;
 
 <div class="icon">
 <!-- <a href="#"><img src="static/call_us.png" class="download_"></a> -->
-<a href="#" onclick="callme('8447570623')"><img src="static/call_us.png" class="download_"></a>
+<a href="#" onclick="callme('8447570623')"><img src="static/call_us.png" class="download_"></a><br>
 
   <a href="#"><img src="static/googleplay.png" class="download_"></a>
   <a href="#"><img src="static/appleplay.png"  class="download_"></a>
@@ -474,7 +579,7 @@ function carousel() {
     myIndex++;
     if (myIndex > x.length) {myIndex = 1}    
     x[myIndex-1].style.display = "block";  
-    setTimeout(carousel, 4000);    
+    setTimeout(carousel, 2000);    
 }
 
 function callme(field) {
